@@ -29,7 +29,7 @@ Example of the JSON that we have to pass in the AWS OpsWorks Portal inside: Stac
       }
     }
 
-Today we do not pass env variable using this JSON. We only declare env variables in the AWS OpsWorks Portal, inside: Apps -> edit (app_name) -> Environment Variables.
+Today we do not need to pass env variables using this JSON. We can only declare env variables in the AWS OpsWorks Portal, inside: Apps -> edit (app_name) -> Environment Variables.
 
 **Note** that the `symlink_before_migrate` attribute is necessary so that OpsWorks automatically symlinks the shared file when setting up release directories or deploying a new version.
 
