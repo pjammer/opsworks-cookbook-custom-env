@@ -4,6 +4,9 @@
 #   env (hash of custom environment settings)
 
 define :custom_env_template do
+  Chef::Log.info "Starting params here"
+  Chef::Log.info params.inspect
+  Chef::Log.info "Ending params here"
   template "#{params[:deploy][:deploy_to]}/shared/config/application.yml" do
     source "application.yml.erb"
     owner params[:deploy][:user]
